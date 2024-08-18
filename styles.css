@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("jason-dent-v5OiDiqIj-M-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+/* variables de letra y colores */
+
+:root {
+    --font: 'Nosifer', cursive;
+    --color: #DC143C;
+}
+
+/* estilos del titulo */
+
+.tittle {
+    font-family: var(--font);
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-style: normal;
+    color: var(--color);
+}
+
+/*  estilos y tamaño del contenedor padre */
+
+.container {
+    width: 60%;
+    margin: 10% auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* estilos del boton */
+
+.button {
+    background-color: #1f1f1f;
+    /* Fondo oscuro para resaltar el texto */
+    color: #e0e0e0;
+    /* Texto claro para contraste */
+    border: 2px solid #ff0055;
+    /* Borde rojo neón para un toque agresivo */
+    border-radius: 5px;
+    /* Bordes redondeados para un toque moderno */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    font-weight: bold;
+    /* Texto en negrita */
+    text-transform: uppercase;
+    /* Texto en mayúsculas para impacto */
+    cursor: pointer;
+    /* Cursor de mano al pasar sobre el botón */
+    transition: all 0.3s ease;
+    /* Transición suave para los efectos */
+}
+
+.button:hover {
+    background-color: #ff0055;
+    /* Cambio de color de fondo en hover */
+    color: #1f1f1f;
+    /* Cambio de color del texto en hover */
+    border-color: #e0e0e0;
+    /* Cambio de color del borde en hover */
+    transform: scale(1.05);
+    /* Efecto de escala al pasar el ratón */
+}
+
+/* estilos del input */
+
+.input {
+    background-color: #2d2d2d;
+    /* Fondo oscuro para resaltar el texto */
+    color: #e0e0e0;
+    /* Texto claro para contraste */
+    border: 2px solid #ff0055;
+    /* Borde rojo neón */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    padding: 10px;
+    /* Espaciado interno */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    font-weight: bold;
+    /* Texto en negrita */
+    width: 60%;
+    /* Ancho completo del contenedor */
+    box-sizing: border-box;
+    /* Incluye el borde en el tamaño total */
+    transition: all 0.3s ease;
+    /* Transición suave para los efectos */
+}
+
+.input:focus {
+    background-color: #1f1f1f;
+    /* Cambio de color de fondo en foco */
+    border-color: #ff0055;
+    /* Cambio de color del borde en foco */
+    outline: none;
+    /* Quita el contorno por defecto del foco */
+    box-shadow: 0 0 10px rgba(255, 0, 85, 0.5);
+    /* Sombra para destacar el foco */
+}
+
+
+/* estilos de los divs que se crean dinamicamente */
+
+.task {
+    margin-top: 2rem;
+    /* Espaciado superior para separar del contenido */
+    background-color: #333;
+    /* Fondo oscuro para resaltar otros elementos */
+    color: #ff0055;
+    /* Texto en un color neón para alto contraste */
+    border: 3px solid #ff0055;
+    /* Borde neón para un toque agresivo */
+    border-radius: 10px;
+    /* Bordes redondeados para un toque moderno */
+    padding: 20px;
+    /* Espaciado interno para contenido */
+    font-size: 18px;
+    /* Tamaño de fuente grande para visibilidad */
+    font-weight: bold;
+    /* Texto en negrita */
+    text-transform: uppercase;
+    /* Texto en mayúsculas para impacto */
+    box-shadow: 0 0 15px rgba(255, 0, 85, 0.8);
+    /* Sombra para destacar */
+    transition: all 0.3s ease;
+    /* Transición suave para efectos */
+}
+
+.task:hover {
+    background-color: #ff0055;
+    /* Cambio de fondo en hover */
+    color: #fff;
+    /* Texto blanco en hover para alto contraste */
+    border-color: #e0e0e0;
+    /* Borde más claro en hover */
+    transform: scale(1.05);
+    /* Efecto de escala al pasar el ratón */
+    box-shadow: 0 0 20px rgba(255, 0, 85, 1);
+    /* Sombra más intensa en hover */
+}
+
+/* div contenedor de los iconos */
+
+.task {
+    display: flex;
+    /* Flexbox para alinear los elementos */
+    justify-content: space-between;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+}
+
+/* estilos de la tarea completada */
+
+.completed {
+    background-color: #1f1f1f;
+    /* Fondo oscuro para resaltar */
+    color: #e0e0e0;
+    /* Texto claro para contraste */
+    border-color: #ff0055;
+    /* Borde rojo neón */
+    box-shadow: 0 0 15px rgba(255, 0, 85, 0.8);
+    /* Sombra para destacar */
+    text-decoration: line-through;
+    /* Añadir línea al texto completado */
+    opacity: 0.6;
+    /* Opcional: reducir la opacidad para indicar que está completado */
+}
